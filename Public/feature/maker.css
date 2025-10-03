@@ -1,0 +1,211 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.makers-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.makers-section h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.makers-section .subtitle {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 3rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Statistics Section */
+.makers-stats {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 4rem;
+    flex-wrap: wrap;
+}
+
+.stat-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    padding: 1.5rem 2.5rem;
+    width: 220px;
+    text-align: center;
+}
+
+.stat-card h3 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin: 0 0 0.5rem 0;
+}
+
+.stat-card p {
+    font-size: 1rem;
+    color: #777;
+    margin: 0;
+}
+
+/* Makers Grid Section */
+.makers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.maker-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.maker-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.maker-image-wrapper {
+    position: relative;
+}
+
+.maker-image-wrapper img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.maker-image-wrapper .tag {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 0.3rem 0.7rem;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.maker-card-content {
+    padding: 1.5rem;
+}
+
+.maker-card-content h4 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin: 0 0 0.5rem 0;
+    color: #333;
+}
+
+.maker-card-content .description {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.6;
+    min-height: 57px; /* Ensures consistent card height */
+}
+
+.maker-card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+}
+
+.maker-card-footer span {
+    font-size: 1rem;
+    color: #555;
+    font-weight: 700;
+}
+
+.profile-button {
+    padding: 0.6rem 1.2rem;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+}
+
+.profile-button:hover {
+    background-color: #45a049;
+}
+.cta-section {
+    background-color: #fdfdfd; /* A very light, clean background */
+    border: 1px solid #f0f0f0;
+    border-radius: 12px;
+    padding: 4rem 2rem;
+    max-width: 900px;
+    margin: 4rem auto;
+    text-align: center;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+}
+
+.cta-icon-wrapper {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #4CAF50; /* Green border */
+    color: #4CAF50; /* Green icon color */
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.cta-section h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #333;
+    margin: 0 0 1rem 0;
+}
+
+.cta-section p {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 600px;
+    line-height: 1.6;
+    margin: 0 0 2rem 0;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #4CAF50; /* Green background */
+    color: #ffffff;
+    padding: 1rem 2.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+    transform: translateY(-2px);
+}

@@ -4,30 +4,353 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marketplace - Reloop</title>
+    <link rel="stylesheet" href="marketplace.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <div class="header">
         <div class="header-content">
-            <a href="index.html" class="logo">
-                <img src="./images/plant (1).png" alt="Reloop Logo" class="logo-icon" style="margin-bottom: 0.8rem;">
+            <a href="#home" class="logo">
+                <img src="./images/plant (1).png" alt="" class="logo-icon" style="margin-bottom: 0.8rem;">
                 <span class="logo-text">Reloop</span>
             </a>
+
             <nav class="nav">
-                <a href="index.html" class="nav-link">Home</a>
+                <a href="index.html#home" class="nav-link">Home</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#services" class="nav-link">What we Serve</a>
                 <a href="about.html" class="nav-link">About</a>
             </nav>
+
+            <a href="signup.html" class="contact-content">
+                Get Started
+            </a>
+
+            <button type="button" class="menu-button">
+                <img src="./images/burger-menu-svgrepo-com.svg" alt="menubutton" class="menu-icon">
+            </button>
         </div>
     </div>
 
-    <section class="how-it-works-section">
-        <h2>Marketplace</h2>
-        <p class="subtitle">Discover unique, sustainable products with stories of transformation</p>
-        <div class="roles-container" id="product-grid" style="justify-content: flex-start;">
-            <p>Loading products...</p>
-        </div>
-    </section>
+    <div class="marketplace-container">
+        <header class="marketplace-header">
+            <h1>Discover Unique, <br><span class="highlight">Sustainable Products</span></h1>
+            <p>Every product has a story. Shop from local makers and support the circular economy.</p>
 
-    <script src="js/marketplace.js"></script>
+            <div class="search-bar">
+                <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                <input type="text" placeholder="Search products or makers...">
+            </div>
+
+            <nav class="filter-tags">
+                <button class="tag-button active">All</button>
+                <button class="tag-button">Fashion</button>
+                <button class="tag-button">Home Decor</button>
+                <button class="tag-button">Home & Garden</button>
+                <button class="tag-button">Furniture</button>
+                <button class="tag-button">Stationery</button>
+            </nav>
+        </header>
+
+        <main class="product-grid">
+            <div class="product-card">
+                <div class="card-image-wrapper">
+                    <img src="./images/product-4.jpg" alt="Upcycled Denim Jacket">
+                    <span class="category-tag">Fashion</span>
+                    <button class="wishlist-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                    </button>
+                </div>
+                <div class="card-content">
+                    <h2>Upcycled Denim Jacket</h2>
+                    <p class="maker-name">by Stitch & Style</p>
+                    <div class="location">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        <span>Whitefield, Bengaluru</span>
+                    </div>
+                    <div class="rating">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="gold" stroke="gold" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <span>5 (15 reviews)</span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class="price-section">
+                        <span class="price">₹1,800</span>
+                        <span class="origin">From Old Denim</span>
+                    </div>
+                    <a href="#" class="details-button">View Details</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="card-image-wrapper">
+                    <img src="https://craftribute.com/cdn/shop/files/Light-pink-5293-0-1-_1_c32c97a1-0717-4569-b298-c531f0440d0f.jpg?v=1690395765" alt="Handmade Paper Notebooks">
+                    <span class="category-tag">Stationery</span>
+                    <button class="wishlist-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                    </button>
+                </div>
+                <div class="card-content">
+                    <h2>Handmade Paper Notebooks</h2>
+                    <p class="maker-name">by Paper Trail Co.</p>
+                    <div class="location">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        <span>Jayanagar, Bengaluru</span>
+                    </div>
+                    <div class="rating">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="gold" stroke="gold" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <span>4.6 (28 reviews)</span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class="price-section">
+                        <span class="price">₹350</span>
+                        <span class="origin">From Recycled Paper</span>
+                    </div>
+                    <a href="#" class="details-button">View Details</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                 <div class="card-image-wrapper">
+                    <img src="https://5.imimg.com/data5/ECOM/Default/2024/4/411534358/FI/LG/LP/64719139/712jwsnn6bl-sl1080-1-500x500.jpg" alt="Tire Ottoman">
+                    <span class="category-tag">Furniture</span>
+                    <button class="wishlist-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                    </button>
+                </div>
+                <div class="card-content">
+                    <h2>Tire Ottoman</h2>
+                    <p class="maker-name">by Urban Upcycle</p>
+                    <div class="location">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        <span>Malleswaram, Bengaluru</span>
+                    </div>
+                    <div class="rating">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="gold" stroke="gold" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <span>4.8 (12 reviews)</span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class="price-section">
+                        <span class="price">₹2,500</span>
+                        <span class="origin">From Old Tires</span>
+                    </div>
+                    <a href="#" class="details-button">View Details</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="card-image-wrapper">
+                    <img src="./images/product-3.jpg" alt="Upcycled Denim Jacket">
+                    <span class="category-tag">Home & Garden</span>
+                    <button class="wishlist-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                    </button>
+                </div>
+                <div class="card-content">
+                    <h2>Glass Bottle Planters Set</h2>
+                    <p class="maker-name">by EcoArtist Studio</p>
+                    <div class="location">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        <span>Whitefield, Bengaluru</span>
+                    </div>
+                    <div class="rating">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="gold" stroke="gold" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <span>5 (15 reviews)</span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class="price-section">
+                        <span class="price">₹600</span>
+                        <span class="origin">From Glass Bottle</span>
+                    </div>
+                    <a href="#" class="details-button">View Details</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="card-image-wrapper">
+                    <img src="./images/product-1.jpg" alt="Upcycled Denim Jacket">
+                    <span class="category-tag">Fashion</span>
+                    <button class="wishlist-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                    </button>
+                </div>
+                <div class="card-content">
+                    <h2>Vintage Saree Tote Bag</h2>
+                    <p class="maker-name">by Priya's Creation</p>
+                    <div class="location">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        <span>Whitefield, Bengaluru</span>
+                    </div>
+                    <div class="rating">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="gold" stroke="gold" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <span>5 (15 reviews)</span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class="price-section">
+                        <span class="price">₹450</span>
+                        <span class="origin">From Old Saree Fabrics</span>
+                    </div>
+                    <a href="#" class="details-button">View Details</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="card-image-wrapper">
+                    <img src="./images/product-2.jpg" alt="Upcycled Denim Jacket">
+                    <span class="category-tag">Home Decor</span>
+                    <button class="wishlist-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                    </button>
+                </div>
+                <div class="card-content">
+                    <h2>Reclaimed Wood Wall Art</h2>
+                    <p class="maker-name">by Craftsman Kumar</p>
+                    <div class="location">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        <span>Whitefield, Bengaluru</span>
+                    </div>
+                    <div class="rating">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="gold" stroke="gold" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <span>5 (15 reviews)</span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class="price-section">
+                        <span class="price">₹1,200</span>
+                        <span class="origin">From Reclaimed Wood</span>
+                    </div>
+                    <a href="#" class="details-button">View Details</a>
+                </div>
+            </div>
+            
+        </main>
+    </div>
+
+    <div class="footer-container" style="margin-top: 3rem;">
+        <footer class="footer">
+
+            <div class="footer-top">
+
+                <div class="comp-logo">
+                    <a class="logo-link" href="#">
+                        <img class="logo-svg" src="images/plant (1).png">
+                        <p style="color: green;">Reloop</p>
+                    </a>
+                </div>
+                <p class="filler-text">Seamless Learning for Brighter Futures.</p>
+                <div class="social">
+                    <a href="https://www.instagram.com/_suryansh_shxrma.001/" class="social-link">
+                        <img src="images/instagram.svg" class="social-icon" />
+                    </a>
+                    <a href="https://x.com/Suryans44881546" class="social-link">
+                        <img src="images/twitter.svg" class="social-icon" />
+                    </a>
+                    <a href="https://www.linkedin.com/in/suryan925a98309sh-sharma-/" class="social-link">
+                        <img src="images/linkedin.svg" class="social-icon" />
+                    </a>
+                    <a href="https://github.com/Suryansh10-ctrl" class="social-link">
+                        <img src="images/github.svg" class="social-icon" />
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-grid">
+                <!-- column 1 -->
+                <div class="footer-grid-column">
+                    <div class="footer-grid-heading">
+                        Products
+                    </div>
+                    <ul class="footer-links-list">
+                        <li>
+                            <a href="#overview" class="footer-link">Overview</a>
+                        </li>
+                        <li>
+                            <a href="#overview" class="footer-link">Solutions</a>
+                        </li>
+                        <li>
+                            <a href="#overview" class="footer-link">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="#overview" class="footer-link">Customers</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- column 2 -->
+                <div class="footer-grid-column">
+                    <div class="footer-grid-heading">
+                        Company
+                    </div>
+                    <ul class="footer-links-list">
+                        <li>
+                            <a href="#overview" class="footer-link">About</a>
+                        </li>
+                        <li>
+                            <a href="#overview" class="footer-link">Investor Relations</a>
+                        </li>
+                        <li>
+                            <a href="#overview" class="footer-link">Jobs</a>
+                        </li>
+                        <li>
+                            <a href="#overview" class="footer-link">Press</a>
+                        </li>
+                        <li>
+                            <a href="#overview" class="footer-link">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- column 3 -->
+                <div class="footer-grid-column">
+                    <div class="footer-grid-heading">
+                        Support
+                    </div>
+                    <ul class="footer-links-list">
+                        <li>
+                            <a href="#overview" class="footer-link">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#overview" class="footer-link">Documentation</a>
+                        </li>
+                        <li>
+                            <a href="#overview" class="footer-link">Chat</a>
+                        </li>
+                        <li>
+                            <a href="#overview" class="footer-link">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- column 4 -->
+                <div class="footer-grid-column">
+                    <div class="footer-grid-heading">
+                        Legal
+                    </div>
+                    <ul class="footer-links-list">
+                        <li>
+                            <a href="#overview" class="footer-link">Terms of Service</a>
+                        </li>
+                        <li>
+                            <a href="#overview" class="footer-link">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#overview" class="footer-link">Cookie Settings</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <div class="footer-copyright">
+            © 2025 - Present Reloop.Empowering India's circular economy. All rights reserved.
+        </div>
+    </div>
+
+
 </body>
 </html>
