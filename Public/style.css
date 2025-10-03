@@ -285,6 +285,10 @@ body{
     max-width: 300px;
     flex-grow: 1; /* Allows cards to grow if space is available */
 }
+.role-card:hover{
+    border: 1px solid #232222;
+}
+
 
 .role-card h3 {
     font-size: 1.5rem;
